@@ -16,7 +16,7 @@ function App() {
 
     return (
         <CartProvider>
-            <ToastContainer position='top-right' autoClose={3000} />
+            <ToastContainer position='top-left' autoClose={2000} />
             {location.pathname !== '/login' && <Header />}
             <Routes>
                 <Route path='/' element={<Home />} />
