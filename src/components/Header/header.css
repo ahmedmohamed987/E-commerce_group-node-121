@@ -1,0 +1,182 @@
+/* Modern Header Styles - Harmonized with Amazon & Project Theme */
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(240, 248, 255, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(200, 220, 240, 0.85);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+  transition: all 0.25s ease;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #131921;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.02);
+  color: #131921;
+}
+
+.header-logo-icon {
+  font-size: 30px;
+  color: orange;
+  filter: drop-shadow(0 2px 4px rgba(255, 165, 0, 0.35));
+}
+
+.header-logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: #131921;
+}
+
+/* Header Right - Navigation Links + Logout/Login */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Navigation Links */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.header-nav-link:hover {
+  color: #b45309;
+  background-color: rgba(255, 165, 0, 0.12);
+}
+
+.header-nav-link.active {
+  color: #92400e;
+  background-color: rgba(255, 165, 0, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(245, 158, 11, 0.35);
+}
+
+.header-nav-icon {
+  font-size: 15px;
+}
+
+.header-cart-badge {
+  background-color: orange;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 12px;
+  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Auth Buttons */
+.header-btn-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: orange;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.header-btn-login:hover {
+  background-color: rgb(204, 134, 4);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.header-btn-logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header-btn-logout:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    gap: 12px;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(200, 220, 240, 0.6);
+    padding-top: 8px;
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .header-nav {
+    gap: 4px;
+  }
+
+  .header-nav-link {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
